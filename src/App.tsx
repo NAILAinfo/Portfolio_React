@@ -1,17 +1,16 @@
 import MyButton from './components/MyButton';
-import React from 'react';
-export default function MyApp() {
-const [c, setCount] = React.useState(0);
+import { useState } from "react";
+
+export default function App() {
+  const [color, setColor] = useState("black"); // couleur initiale = noir
+
   return (
-    <>
-      <h1>Compteur </h1>
-      <p>Valeur : {c}</p>
-      <button onClick={()=> setCount(c+1)}>Incrementer</button>
-      <button onClick={()=> setCount(c-1)}>Decrementer</button>
-      <MyButton />
-      
-    </>
-    
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1 style={{ color: color }}>Bonjour React 👋</h1>
+      <button onClick={() => setColor("red")}>Rouge</button>
+      <button onClick={() => setColor("blue")}>Bleu</button>
+      <button onClick={() => setColor("green")}>Vert</button>
+      <button onClick={() => setColor("black")}>Réinitialiser</button>
+    </div>
   );
 }
-
