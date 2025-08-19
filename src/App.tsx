@@ -10,6 +10,7 @@ export default function App() {
       <button onClick={()=> setCount("red")}>Rouge</button>
       <button onClick={()=> setCount("blue")}>Bleu</button>
       <button onClick={()=> setCount("green")}>Vert</button>
+      
       <button onClick={()=> setCount("bleu")}>Reinitialisation</button>
     </div>
     
