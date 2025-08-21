@@ -1,21 +1,24 @@
-import { useEffect , useState} from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
-    const [count, setCount] = useState(0);
-useEffect(() => {
-    document.title = "Compteur " + count;
-  }, [count]); // tableau vide = exécute une seule fois au montage
+  const [prenom, setPrenom] = useState("");
 
+  useEffect(() => {
+    if (prenom !== "") {
+      console.log(`Bienvenue, ${prenom} !`);
+    }
+  }, [prenom]); // se déclenche à chaque changement de prénom
 
   return (
-
-    
-
-  
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-    <button onClick={()=> setCount(count+1)}>Incrementer</button> 
-    <button onClick={()=> setCount(count-1)}>Decrementer</button> 
-
+      <h2>Entre ton prénom :</h2>
+      <input
+        type="text"
+        value={prenom}
+        onChange={(e) => setPrenom(e.target.value)}
+        placeholder="Ton prénom"
+      />
+      <p>{prenom !== "" ? `Bienvenue, ${prenom} !` : "Entre ton prénom..."}</p>
     </div>
   );
 }
