@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useEffect , useState} from "react";
 
 export default function App() {
-  const [i, setCount] = useState("gray ");
+    const [count, setCount] = useState(0);
+useEffect(() => {
+    document.title = "Compteur " + count;
+  }, [count]); // tableau vide = exécute une seule fois au montage
+
+
   return (
-    <div style={{ textAlign: "center", marginTop: "50px", backgroundColor: i, height: "100vh" }}>
-      <h1>Fond de la fenetre </h1>
-      <div style={{ margin: "20px 0" }}>
-      <button onClick={()=> setCount("white")}>Blan</button>
-      <button onClick={()=> setCount("red")}>Rouge</button>
-      <button onClick={()=> setCount("blue")}>Bleu</button>
-      <button onClick={()=> setCount("green")}>Vert</button>
-      
-      <button onClick={()=> setCount("bleu")}>Reinitialisation</button>
-    </div>
+
     
+
+  
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <button onClick={()=> setCount(count+1)}>Incrementer</button> 
+    <button onClick={()=> setCount(count-1)}>Decrementer</button> 
+
     </div>
   );
 }
