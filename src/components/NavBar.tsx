@@ -3,42 +3,17 @@ import logo from "../assets/logo.png";
 import React from "react";
 import {motion } from "framer-motion";
 import { useState } from "react";
-
-
+import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
   return (
     <Navbar expand="lg">
       <Container>
           <Navbar.Brand href="#home" className="logo">
-                      <motion.span
-              initial={{ x: 30, color: "#ffcc00" }}
-              animate={{ x: 0, color: "#ffcc00" }}
-              transition={{ duration: 1 }}
-            >
-              &lt;
-            </motion.span>
-
-            <motion.span
-              initial={{ opacity: 0, color: "#ffcc00" }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
-              className="name"
-            >
-              Naila
-            </motion.span>
-
-            <motion.span
-              initial={{ x: -30, color: "#ffcc00" }}
-              animate={{ x: 0, color: "#ffcc00" }}
-              transition={{ duration: 1 }}
-            >
-              &gt;
-            </motion.span>
-
+            <Logo/>
         </Navbar.Brand>
 
-
+       
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -48,8 +23,10 @@ const NavBar: React.FC = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#projects">Work Experience</Nav.Link>
+            <Nav.Link href="#projects">Achievements</Nav.Link>
+            <Nav.Link href="#projects">Licenses and Certifications</Nav.Link>
             <Nav.Link href="#Contact">Contact</Nav.Link>
-            <Nav.Link href="#Links">Links</Nav.Link>
           </Nav>
 
           <Button
@@ -58,7 +35,7 @@ const NavBar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View CV
+              Resume
           </Button>
 
 
