@@ -23,9 +23,9 @@ const NavBar: React.FC = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#projects">Work Experience</Nav.Link>
-            <Nav.Link href="#projects">Achievements</Nav.Link>
-            <Nav.Link href="#projects">Licenses and Certifications</Nav.Link>
+            {/*<Nav.Link href="#projects">Work Experience</Nav.Link>*/}
+            {/*<Nav.Link href="#projects">Achievements</Nav.Link>*/}
+            {/*<Nav.Link href="#projects">Licenses and Certifications</Nav.Link>*/}
             <Nav.Link href="#Contact">Contact</Nav.Link>
           </Nav>
 
@@ -37,8 +37,7 @@ const NavBar: React.FC = () => {
             >
               Resume
           </Button>
-
-
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
