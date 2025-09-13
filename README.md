@@ -3,8 +3,8 @@
 This project is [my personal portfolio](https://mon-site.com), developed using:
 - Front-end library: React
 - CSS framework: React-bootstrap
-- CSS animation library: Animate.css
-to showcase my skills, projects, and background.
+- CSS animation library: Animate.css <br>
+to showcase my **skills**, **projects**, and **background**.
 
 ## Features
 
