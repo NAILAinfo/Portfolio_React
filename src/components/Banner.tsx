@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row ,Button } from "react-bootstrap";
 import { ArrowDown ,Github, Linkedin , EnvelopeFill} from 'react-bootstrap-icons'; 
+import main from "../assets/main.png";
 
 const Banner = () => {
     return (
@@ -55,6 +56,7 @@ const Banner = () => {
 
                     </Col>
                     <Col xs={12} md={6} xl={5} >
+                        <img src={main} alt="main" style={{ width: "350px", height: "auto" }} />
                     </Col>
                 </Row>
             </Container>
