@@ -1,92 +1,16 @@
-/* Navigation */
 .navbar {
-  background-color: #0d1b2a; /* Couleur de fond */
   padding: 10px 20px;
 }
 
-.navbar-brand  {
-  color: #ffffff;
-}
-
 .nav-link {
-  color: #ffffff !important;
+  color: #120808 ;
   margin: 0 10px;
   transition: 0.3s;
 }
-
 .nav-link:hover {
-  color: #ffd700 !important; /* Jaune au survol */
+  color: #e50303 ; 
 }
 .navbar-nav .nav-link {
   margin: 0 25px; /* espace entre chaque élément */
 }
 
-.download-btn {
-  background-color: #ffd700;
-  border: none;
-  border-radius: 20px;
-  padding: 8px 15px;
-  color: #000;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.download-btn:hover {
-  background-color: #ffcc00;
-}
-me-auto{
-  display: block;
-  margin-left: auto;
-  width: 50%;
-  max-width: 200px;
-  height: auto;
-}
-
-.avatar{
-    border-radius: 50%;
-}
-
-
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Centra', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  color: #ffffff; 
-}
-
-.name {
-  margin: 0 10px;
-}
-.logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff; /* couleur du logo */
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-/* Style des chevrons */
-.chevron {
-  transition: transform 0.6s ease;
-  display: inline-block;
-}
-
-/* Animation quand on clique */
-.chevron.left.animate {
-  transform: translateX(-15px);
-}
-
-.chevron.right.animate {
-  transform: translateX(15px);
-}
-
-/* Texte reste fixe */
-.text {
-  color: #ffffff;
-}
