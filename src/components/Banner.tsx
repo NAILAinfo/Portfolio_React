@@ -12,14 +12,7 @@ const Banner = () => {
 
                         <span>Hello, I'm </span>
                         <h1>{"Naila Dahmani"} </h1>                            
-                        <span className="wrap">Web developer</span>
-                        <p>Innovative and proactive Front-end Developer, capable of developing websites and 
-                            applications with elegant and innovative concepts for demanding clients. Talented in 
-                            project management, team leadership and independent problem solving. Versatile and 
-                            highly organized with expertise in project planning, concept improvement and 
-                            programming verification.
-                        </p>
-
+                        <span className="wrap">Web developer</span>                        
                         <div className="social-links" style={{ marginBottom: "15px" }}>
                                 <a
                                     href="https://github.com/ton-profil"
@@ -61,7 +54,7 @@ const Banner = () => {
 
                     </Col>
                     <Col xs={12} md={6} xl={5} >
-                        <img src={main} alt="main" style={{ width: "350px", height: "auto" }} />
+                       {/* <img src={main} alt="main" style={{ width: "350px", height: "auto" }} />*/} 
                     </Col>
                 </Row>
             </Container>
