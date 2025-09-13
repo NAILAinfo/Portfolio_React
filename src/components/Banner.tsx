@@ -5,7 +5,7 @@ import main from "../assets/main.png";
 
 const Banner = () => {
     return (
-        <section className="banner" id="home" style={{ marginTop: "50px" }}>
+        <section className="banner" id="home" style={{ marginTop: "40px" }}>
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
