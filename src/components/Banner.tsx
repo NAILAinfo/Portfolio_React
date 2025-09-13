@@ -5,7 +5,7 @@ import main from "../assets/main.png";
 
 const Banner = () => {
     return (
-        <section className="banner" id="home">
+        <section className="banner" id="home" style={{ marginTop: "50px" }}>
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
@@ -50,9 +50,14 @@ const Banner = () => {
 
                                 </div>
 
-                            <button onClick={() => console.log('connect')}>
-                            Let’s Connect <ArrowDown size={20} />
-                            </button>
+                            <Button 
+                                variant="primary" 
+                                onClick={() => console.log('connect')} 
+                                style={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                >
+                                Let’s Connect <ArrowDown size={20} />
+                            </Button>
+
 
                     </Col>
                     <Col xs={12} md={6} xl={5} >

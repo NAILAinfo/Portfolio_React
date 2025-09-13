@@ -1,17 +1,16 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import logo from "../assets/logo.png";
+{/*import logo from "../assets/logo.png"; import Logo from "./Logo";*/}
 import React from "react";
 import {motion } from "framer-motion";
 import { useState } from "react";
-import Logo from "./Logo";
 
 const NavBar: React.FC = () => {
   return (
     <Navbar expand="lg">
       <Container>
-          <Navbar.Brand href="#home" className="logo">
+      {/*    <Navbar.Brand href="#home" className="logo">
             <Logo/>
-        </Navbar.Brand>
+        </Navbar.Brand>*/}
 
        
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -28,15 +27,6 @@ const NavBar: React.FC = () => {
             {/*<Nav.Link href="#projects">Licenses and Certifications</Nav.Link>*/}
             <Nav.Link href="#Contact">Contact</Nav.Link>
           </Nav>
-
-          <Button
-              variant="primary"
-              href="https://docs.google.com/document/d/1uwaV6upgWd0D1TPsTzBUFdsf-IFabqsxwGyUnjmDYrY/edit?tab=t.0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-          </Button>
           
         </Navbar.Collapse>
       </Container>
