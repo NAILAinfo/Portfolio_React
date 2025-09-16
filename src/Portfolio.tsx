@@ -6,7 +6,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
-import Skills from "./components/Skillls";
+import Skills from "./components/Skills/Skillls";
 //import Certifications from "./components/Certifications";
 export default function Portfolio() {
   return (

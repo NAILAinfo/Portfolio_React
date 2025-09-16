@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row ,Button } from "react-bootstrap";
-import { ArrowDown ,Github, Linkedin  } from 'react-bootstrap-icons'; 
+import { BsArrowDown, BsGithub, BsLinkedin } from "react-icons/bs";
 import main from "../assets/main.png";
 
 const Banner = () => {
@@ -20,7 +20,8 @@ const Banner = () => {
                                     rel="noopener noreferrer"
                                     style={{ marginRight: "20px" }}
                                 >
-                                    <Github size={40} />
+                                    <BsGithub size={30} />
+
                                 </a>
 
                                 <a
@@ -28,7 +29,7 @@ const Banner = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <Linkedin size={40} />
+                                    <BsLinkedin size={30} />
                                 </a>
 
                                 <Button
@@ -48,7 +49,9 @@ const Banner = () => {
                                 onClick={() => console.log('connect')} 
                                 style={{ display: "flex", alignItems: "center", gap: "8px" }}
                                 >
-                                Let’s Connect <ArrowDown size={20} />
+                                Let’s Connect <BsArrowDown size={30} />
+
+                                
                             </Button>
 
 

@@ -33,3 +33,6 @@ npm start
 ```
 
 ## Project structure 
+
+
+orientée “data-driven” (on met toutes les données dans un tableau/JSON puis on les mappe).
