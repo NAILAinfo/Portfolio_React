@@ -7,8 +7,9 @@
                 {/*<Tools /> */}
 
 import React from "react";
+import
 import "./StyleSkills.css"
-import { codeSlash } from 'react-bootstrap-icons';
+
 export default function Skills() {
   return (
     <section id="skills">
@@ -18,8 +19,7 @@ export default function Skills() {
                 <div id="skl" >
                     <h3>Programming Languages</h3>
                     <ul>
-                        <li>
-                            Python</li>
+                        <li>Python</li>
                         <li>JavaScript </li>
                         <li>TypeScript</li>
                         <li>Java</li>

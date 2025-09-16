@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row ,Button } from "react-bootstrap";
-import { ArrowDown ,Github, Linkedin , EnvelopeFill} from 'react-bootstrap-icons'; 
+import { ArrowDown ,Github, Linkedin  } from 'react-bootstrap-icons'; 
 import main from "../assets/main.png";
 
 const Banner = () => {
