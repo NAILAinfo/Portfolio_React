@@ -18,12 +18,16 @@ export default function SkillCategory({ category, skills }: SkillCategoryProps) 
       style={{
         display: "inline-block", 
         verticalAlign: "top", 
-        width: "250px", 
+        width: "350px", 
         margin: "10px", 
         padding: "15px",
         background: "white",
         borderRadius: "10px",
         boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+        
+        textAlign: "center",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <h2
