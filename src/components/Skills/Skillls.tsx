@@ -46,29 +46,28 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="p-6"
-    style={{
+    <section
+      id="skills"
+      style={{
         padding: "60px 20px",
         textAlign: "center",
         backgroundColor: "#f9f9f9",
-      }}  >
-
-      <h1 
-          className="text-2xl font-bold mb-6" 
-          style=
-          {{
+      }}
+    >
+        <h1
+            style={{
               fontSize: "2rem",
               fontWeight: "bold",
               marginBottom: "20px",
               color: "#333",
-          }}>
+            }}
+          >
             Technical Skills
-          </h1>
-
-      {skillsData.map((category, index) => (
+        </h1>
+              
+        {skillsData.map((category, index) => (
         <SkillCategory key={index} category={category.category} skills={category.skills} />
       ))}
     </section>
-    
   );
 }

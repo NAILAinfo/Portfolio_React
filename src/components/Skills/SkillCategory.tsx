@@ -14,14 +14,32 @@ type SkillCategoryProps = {
 
 export default function SkillCategory({ category, skills }: SkillCategoryProps) {
   return (
-    <section className="mb-8">
-      <h2 className="text-xl font-bold mb-4">{category}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {skills.map((skill, index) => (
-          <SkillCard key={index} {...skill} />
-        ))}
-      </div>
-    </section>
+    <div
+      style={{
+        display: "inline-block", 
+        verticalAlign: "top", 
+        width: "250px", 
+        margin: "10px", 
+        padding: "15px",
+        background: "white",
+        borderRadius: "10px",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+      }}
+    >
+      <h2
+        style={{
+          fontSize: "1.2rem",
+          fontWeight: "600",
+          marginBottom: "10px",
+          color: "#333",
+          textAlign: "center",
+        }}
+      >
+        {category}
+      </h2>
+      {skills.map((skill, index) => (
+        <SkillCard key={index} {...skill} />
+      ))}
+    </div>
   );
 }
-

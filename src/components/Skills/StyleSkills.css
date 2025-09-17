@@ -1,35 +1,47 @@
-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+.skill-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d1117; /* fond sombre */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 280px;       /* largeur fixe */
+  margin: 8px;        /* espace entre cartes */
+  font-family: Arial, sans-serif;
 }
-h1 { 
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #333;
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-#skl {
-  background: white;
-  padding: 20px 30px;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
+
+.skill-logo {
+  font-size: 24px; /* taille de l'icône */
 }
-#globale {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+.skill-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
 }
-h3 {
-  font-size: 20px;
-  color: #444;
+
+.skill-text p {
+  font-size: 13px;
+  color: #9ca3af; /* gris clair */
+  margin: 2px 0 0;
 }
-ul {
-  list-style: none;
-  padding: 0;
-  color: #555;
+
+.skill-exp {
+  font-size: 13px;
+  color: #d1d5db; /* gris plus clair */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.clock {
+  font-size: 14px;
 }
