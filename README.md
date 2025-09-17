@@ -34,5 +34,22 @@ npm start
 
 ## Project structure 
 
+### Technical Skills Organization
 
-orientée “data-driven” (on met toutes les données dans un tableau/JSON puis on les mappe).
+Skills are managed using a data-driven approach:
+- Data (categories, logos, strengths, length of experience) is defined in the dedicated SkillsData tsx file.
+- React components (Skills.tsx, SkillCategory.tsx, SkillCard.tsx) dynamically display this data.
+- Skill logos are stored in src/assets/skills.
+
+#### Structure  
+src/
+ ┣ assets/
+ ┃ ┗ skillsIMG/            ← images (ex: pythonICON.png )
+ ┣ components/
+ ┃ ┗ Skills/ 
+ ┃    ┗ Skills.tsx         ← main component (shows all categories)
+ ┃    ┣ SkillCategory.tsx  ← displays a category with its skills
+ ┃    ┣ SkillCard.tsx      ← displays individual competence
+ ┃    ┣ SkillsData.tsx     ← skills data
+ ┃    ┗ StyleSkills.css    
+🔹 This method provides a clear separation between data and components and makes it easier to add skills later.

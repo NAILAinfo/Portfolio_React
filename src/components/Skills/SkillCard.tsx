@@ -1,7 +1,8 @@
 import React from "react";
+import { ReactNode } from "react";
 
 type SkillCardProps = {
-  logo: string;
+  logo: ReactNode;
   name: string;
   strengths: string[];
   experience: string;
@@ -9,15 +10,21 @@ type SkillCardProps = {
 
 export default function SkillCard({ logo, name, strengths, experience }: SkillCardProps) {
   return (
-    <div className="flex items-start gap-3 p-4 rounded-2xl shadow bg-white hover:shadow-md transition">
-      <img src={logo} alt={name} className="w-12 h-12" />
-      <div>
-        <h3 className="font-semibold text-lg">{name}</h3>
-        <p className="text-sm text-gray-600">
-          {strengths.join(", ")}
-        </p>
-        <p className="text-xs text-gray-500 mt-1">Expérience : {experience}</p>
-      </div>
+    <div className="skill-card">
+
+      <div className="skill-logo">{logo}</div>
+
+      <h3>{name}</h3>
+
+      <p>Expérience : {experience}</p>
+      
+      {strengths.length > 0 && (
+        <ul>
+          {strengths.map((s, i) => (
+            <li key={i}>{s}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

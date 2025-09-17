@@ -1,10 +1,11 @@
 import React from "react";
 import SkillCard from "./SkillCard";
+import { ReactNode } from "react";
 
 type SkillCategoryProps = {
   category: string;
   skills: {
-    logo: string;
+    logo: ReactNode;
     name: string;
     strengths: string[];
     experience: string;
@@ -23,3 +24,4 @@ export default function SkillCategory({ category, skills }: SkillCategoryProps) 
     </section>
   );
 }
+
