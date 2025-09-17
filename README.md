@@ -42,6 +42,7 @@ Skills are managed using a data-driven approach:
 - Skill logos are stored in src/assets/skills.
 
 #### Structure  
+```bash
 src/
  ┣ assets/
  ┃ ┗ skillsIMG/            ← images (ex: pythonICON.png )
@@ -52,4 +53,5 @@ src/
  ┃    ┣ SkillCard.tsx      ← displays individual competence
  ┃    ┣ SkillsData.tsx     ← skills data
  ┃    ┗ StyleSkills.css    
+```
 🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
