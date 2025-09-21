@@ -87,16 +87,19 @@ useEffect(() => {
 #### Component architecture
 ```bash
 src/
+ ┣ assets/
+ ┃      ┗ Projectsimg/            # images associated with projects
  └── components/
-      └── Projects/
-           ├── ProjectsSection.jsx   # Main component 
-           ├── ProjectsFilter.jsx    # Filtering area
-           ├── ProjectsGrid.jsx      # Grid displaying filtered projects
-           └── ProjectCard.jsx       # displays individual project
+        ┗ Projects/
+            ├── ProjectsSection.jsx   # Main component 
+            ├── ProjectsFilter.jsx    # Filtering area
+            ├── ProjectsGrid.jsx      # Grid displaying filtered projects
+            └── ProjectCard.jsx       # displays individual project
 ```
 #### Image Management 
-- Images associated with projects are placed in `src\assets\Projectsimg`
--In `projects.json` , each project references its image using a relative path . 
-
+- In `projects.json` , each project references its image using a relative path , for exemple :
+```bash
+    image: `/images/portfolio.png`
+```
 #### Future development
 🔹This structure was designed to evolve towards an external data source Google Sheets API.
