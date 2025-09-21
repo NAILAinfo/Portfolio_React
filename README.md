@@ -31,7 +31,7 @@ npm install
 # Start the local server
 npm start
 ```
-
+Open in browser Navigate to : [http://localhost:5173/](http://localhost:5173/)
 ## Project structure 
 
 ### Technical Skills Organization
@@ -41,11 +41,8 @@ Skills are managed using a data-driven approach:
 - React components (Skills.tsx, SkillCategory.tsx, SkillCard.tsx) dynamically display this data.
 - Skill logos are stored in src/assets/skills.
 
-<<<<<<<  HEAD
 #### Structure  
 ```bash
-=======
-
 src/
  ┣ assets/
  ┃ ┗ skillsIMG/            ← images (ex: pythonICON.png )
@@ -55,16 +52,9 @@ src/
  ┃    ┣ SkillCategory.tsx  ← displays a category with its skills
  ┃    ┣ SkillCard.tsx      ← displays individual skill
  ┃    ┣ SkillsData.tsx     ← skills data
-<<<<<<< HEAD
  ┃    ┗ StyleSkills.css    
 ```
 🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
-=======
- ┃    ┗ StyleSkills.css 
- ```   
-🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
-
-
 
 ### Projects Organization
 #### Data  :
