@@ -54,16 +54,7 @@ export default function Skills() {
         backgroundColor: "#f9f9f9",
       }}
     >
-        <h1
-            style={{
-              fontSize: "2rem",
-              fontWeight: "bold",
-              marginBottom: "20px",
-              color: "#333",
-            }}
-          >
-            Technical Skills
-        </h1>
+        <h1 id="title">Technical Skills</h1>
               
         {skillsData.map((category, index) => (
         <SkillCategory key={index} category={category.category} skills={category.skills} />

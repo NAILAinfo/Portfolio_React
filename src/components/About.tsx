@@ -20,16 +20,9 @@ const About = () => {
             boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
           }}
         >
-              <h2
-                style={{
-                  fontSize: "2rem",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
-                  color: "#333",
-                }}
-              >
+              <h1 id="title">
                 About Me
-              </h2>
+              </h1>
               <p
                 style={{
                   fontSize: "1.1rem",

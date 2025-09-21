@@ -1,26 +1,22 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Web",
-    "category": "WebDev",
-    "description": "Un site portfolio moderne en React.",
+    "name": "Personal Portfolio",
+    "category": "Web Development",
+    "state": "Completed",
+    "Featured": "Yes",
+    "description": "Modern website that showcases my projects, skills, and experience with React.",
     "image": "/images/portfolio.png",
-    "link": "https://monportfolio.com"
-  },
-  {
-    "id": 2,
-    "title": "Application Mobile",
-    "category": "MobileDev",
-    "description": "App mobile en React Native.",
-    "image": "/images/mobileapp.png",
-    "link": "https://monapp.com"
-  },
-  {
-    "id": 3,
-    "title": "Projet IA",
-    "category": "AI",
-    "description": "Un modèle ML pour la prédiction.",
-    "image": "/images/ai.png",
-    "link": "https://ai.com"
+    "link": "https://github.com/NAILAinfo/Portfolio_React",
+    "code": "https://github.com/NAILAinfo/Portfolio_React",
+    "Technologies": ["React", "TypeScript", "CSS"],
+    "role": "Full Stack Developer",
+    "Main Features": [
+      "Responsive design for optimal viewing on all devices",
+      "Interactive project showcase with detailed descriptions",
+      "Contact form for easy communication"
+    ],
+    "Challenges & Solutions": "Implementation of a secure authentication system with JWT and token refresh.",
+    "Impact & Result": "Improved online visibility and increased professional opportunities."
   }
 ]

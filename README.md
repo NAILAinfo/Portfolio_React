@@ -90,7 +90,7 @@ Projects are defined in a JSON file located in the `src\assets\projects.json` , 
     "description":  ,
     "image": ,
     "link":  ,
-    "github_link" : , 
+    "code_link" : , 
 
   },
 ]

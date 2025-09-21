@@ -1,10 +1,10 @@
 import React from 'react';
 
+
 const Education = () => {
   return (
     <section id="education">
-      <h1
-      style ={{}}>Education</h1>
+      <h1  id="title" >Education</h1>
       <ul>
         <li>
           <h3>Bachelor in Computer Science</h3>
