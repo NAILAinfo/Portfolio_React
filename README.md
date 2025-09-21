@@ -45,13 +45,13 @@ Skills are managed using a data-driven approach:
 ```bash
 src/
  ┣ assets/
- ┃ ┗ skillsIMG/            ← images (ex: pythonICON.png )
+ ┃ ┗ skillsIMG/            # images (ex: pythonICON.png )
  ┣ components/
  ┃ ┗ Skills/ 
- ┃    ┗ Skills.tsx         ← main component (shows all categories)
- ┃    ┣ SkillCategory.tsx  ← displays a category with its skills
- ┃    ┣ SkillCard.tsx      ← displays individual skill
- ┃    ┣ SkillsData.tsx     ← skills data
+ ┃    ┗ Skills.tsx         # main component (shows all categories)
+ ┃    ┣ SkillCategory.tsx  # displays a category with its skills
+ ┃    ┣ SkillCard.tsx      # displays individual skill
+ ┃    ┣ SkillsData.tsx     # skills data
  ┃    ┗ StyleSkills.css    
 ```
 🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
@@ -90,17 +90,13 @@ src/
  └── components/
       └── Projects/
            ├── ProjectsSection.jsx   # Main component 
-           ├── ProjectsFilter.jsx    #Filtering area
+           ├── ProjectsFilter.jsx    # Filtering area
            ├── ProjectsGrid.jsx      # Grid displaying filtered projects
            └── ProjectCard.jsx       # displays individual project
 ```
 #### Image Management 
-Images associated with projects are placed in `src\assets\Projectsimg`
-In `projects.json` , each project references its image using a relative path, for example: 
-```bash
-image": "/images/portfolio.png
-```
+- Images associated with projects are placed in `src\assets\Projectsimg`
+-In `projects.json` , each project references its image using a relative path . 
 
 #### Future development
-This structure was designed to evolve towards an external data source Google Sheets API.
->>>>>>> 2a6b137
+🔹This structure was designed to evolve towards an external data source Google Sheets API.
