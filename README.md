@@ -4,6 +4,39 @@ This project is [my personal portfolio](https://mon-site.com), developed using:
 - Front-end library: React
 - CSS framework: React-bootstrap
 - CSS animation library: Animate.css <br>
+
+<p >
+  <!-- React -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="70"/>
+
+<!-- JSX -->
+<img src="https://img.icons8.com/color/96/000000/jsx.png" width="70"/>
+
+<!-- TypeScript -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="70"/>
+
+<!-- Bootstrap -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="70"/>
+
+<!-- HTML -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="70"/>
+
+<!-- CSS -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="70"/>
+
+<!-- JavaScript -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="70"/>
+
+<!-- Node.js -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="70"/>
+
+<!-- npm -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="70"/>
+
+  
+</p>
+
+
 to showcase my **skills**, **projects**, and **background**.
 
 ## Features
@@ -13,12 +46,6 @@ to showcase my **skills**, **projects**, and **background**.
 - Technical skills section with logos
 - Academic background and experience
 - Contact form
-
-## Technologies used
-
-Frontend: React / HTML / CSS / JavaScript / Bootstrap / Tailwind 
-Tools: Vercel / Netlify (where you hosted it)
-
 
 ## ⚙️ Installation & local execution
 ```bash
