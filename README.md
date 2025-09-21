@@ -41,8 +41,11 @@ Skills are managed using a data-driven approach:
 - React components (Skills.tsx, SkillCategory.tsx, SkillCard.tsx) dynamically display this data.
 - Skill logos are stored in src/assets/skills.
 
+<<<<<<<  HEAD
 #### Structure  
 ```bash
+=======
+
 src/
  ┣ assets/
  ┃ ┗ skillsIMG/            ← images (ex: pythonICON.png )
@@ -50,8 +53,64 @@ src/
  ┃ ┗ Skills/ 
  ┃    ┗ Skills.tsx         ← main component (shows all categories)
  ┃    ┣ SkillCategory.tsx  ← displays a category with its skills
- ┃    ┣ SkillCard.tsx      ← displays individual competence
+ ┃    ┣ SkillCard.tsx      ← displays individual skill
  ┃    ┣ SkillsData.tsx     ← skills data
+<<<<<<< HEAD
  ┃    ┗ StyleSkills.css    
 ```
 🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
+=======
+ ┃    ┗ StyleSkills.css 
+ ```   
+🔹 This method provides a clear separation between data and components and makes it easier to add skills later.
+
+
+
+### Projects Organization
+#### Data  :
+Projects are defined in a JSON file located in the `src\assets\projects.json` , Example content:
+```bash
+[
+  {
+    "id": , 
+    "state": , 
+    "Featured": ,
+    "title": ,
+    "category": ,
+    "description":  ,
+    "image": ,
+    "link":  ,
+    "github_link" : , 
+
+  },
+]
+```
+#### Loading into the application
+The `projects.json` file is retrieved using fetch:
+```bash
+useEffect(() => {
+  fetch("/projects.json")
+    .then(res => res.json())
+    .then(data => setProjects(data));
+}, []);
+```
+#### Component architecture
+```bash
+src/
+ └── components/
+      └── Projects/
+           ├── ProjectsSection.jsx   # Main component 
+           ├── ProjectsFilter.jsx    #Filtering area
+           ├── ProjectsGrid.jsx      # Grid displaying filtered projects
+           └── ProjectCard.jsx       # displays individual project
+```
+#### Image Management 
+Images associated with projects are placed in `src\assets\Projectsimg`
+In `projects.json` , each project references its image using a relative path, for example: 
+```bash
+image": "/images/portfolio.png
+```
+
+#### Future development
+This structure was designed to evolve towards an external data source Google Sheets API.
+>>>>>>> 2a6b137

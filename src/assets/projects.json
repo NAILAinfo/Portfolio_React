@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Web",
+    "category": "WebDev",
+    "description": "Un site portfolio moderne en React.",
+    "image": "/images/portfolio.png",
+    "link": "https://monportfolio.com"
+  },
+  {
+    "id": 2,
+    "title": "Application Mobile",
+    "category": "MobileDev",
+    "description": "App mobile en React Native.",
+    "image": "/images/mobileapp.png",
+    "link": "https://monapp.com"
+  },
+  {
+    "id": 3,
+    "title": "Projet IA",
+    "category": "AI",
+    "description": "Un modèle ML pour la prédiction.",
+    "image": "/images/ai.png",
+    "link": "https://ai.com"
+  }
+]

@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/ProjectsBar";
 import Education from "./components/Education";
 import Skills from "./components/Skills/Skillls";
 
