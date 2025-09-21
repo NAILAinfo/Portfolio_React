@@ -1,16 +1,9 @@
 # Portfolio - Naila Dahmani
 
-This project is [my personal portfolio](https://mon-site.com), developed using:
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animation library: Animate.css <br>
-
+This project is [my personal portfolio](https://mon-site.com), developed using: 
 <p >
   <!-- React -->
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="70"/>
-
-<!-- JSX -->
-<img src="https://img.icons8.com/color/96/000000/jsx.png" width="70"/>
 
 <!-- TypeScript -->
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="70"/>
