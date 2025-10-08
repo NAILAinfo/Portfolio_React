@@ -21,7 +21,9 @@ const NavBar: React.FC = () => {
             <Nav.Link href="#skills" className="nav-link-custom">Skills</Nav.Link>
             <Nav.Link href="#projects" className="nav-link-custom">Projects</Nav.Link>
             <Nav.Link href="#projects" className="nav-link-custom">Education</Nav.Link>
-            {/*<Nav.Link href="#projects" className="nav-link-custom">Licenses and Certifications</Nav.Link>*/}
+            <Nav.Link href="#projects" className="nav-link-custom">Licenses & Certifications</Nav.Link>
+            <Nav.Link href="#blogs" className="nav-link-custom">Blogs</Nav.Link>
+            <Nav.Link href="#contact" className="nav-link-custom">Contact </Nav.Link>            
           </Nav>
         </Navbar.Collapse>
 
