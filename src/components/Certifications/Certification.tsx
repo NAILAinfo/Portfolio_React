@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Certification: React.FC = () => {
+const Certification = () => {
     return (
-        <div>
+        <section>
             <h1 id="title">Certification</h1>
-            <p>This component displays certification information.</p>
-        </div>
+        </section>
     );
 };
 

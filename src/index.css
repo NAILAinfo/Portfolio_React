@@ -1,6 +1,12 @@
 /* Style du body */
 /* Style des titres h1, h2, h3, h4, h5, h6 */
 /* Style des paragraphes */
+/* Style des sections about , experience */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
 
 /*NavBar*/
 /*Banner*/
@@ -10,6 +16,8 @@
 /*Skills*/
 /*Projects*/
 /*Education*/
+
+
 /*Licenses & Certifications*/
 /*Blogs*/
 /*Contact me*/

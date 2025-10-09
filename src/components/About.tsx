@@ -2,14 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      style={{
-        padding: "60px 20px",
-        textAlign: "center",
-        backgroundColor: "#f9f9f9",
-      }}
-    >
+    <section id="about" >
         <div
           style={{
             maxWidth: "800px",
