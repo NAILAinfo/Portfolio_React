@@ -6,8 +6,8 @@ const NavBar: React.FC = () => {
     <Navbar expand="lg">
       <Container>
         
-          <Navbar.Brand href="#home" >
-            <h1>Naila Dahmani</h1>
+        <Navbar.Brand href="#home" >
+            &lt;Naila /&gt;
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
             <Nav.Link href="#skills" className="nav-link-custom">Skills</Nav.Link>
             <Nav.Link href="#projects" className="nav-link-custom">Projects</Nav.Link>
             <Nav.Link href="#projects" className="nav-link-custom">Education</Nav.Link>
-            <Nav.Link href="#projects" className="nav-link-custom">Licenses & Certifications</Nav.Link>
+            <Nav.Link href="#projects" className="nav-link-custom">Certifications</Nav.Link>
             <Nav.Link href="#blogs" className="nav-link-custom">Blogs</Nav.Link>
             <Nav.Link href="#contact" className="nav-link-custom">Contact </Nav.Link>            
           </Nav>

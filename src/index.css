@@ -13,9 +13,37 @@ section {
   background-color: #f9f9f9;
 }
 
-/*NavBar*/
-/*Banner*/
+/*NavBar***************************************/
+.navbar{
+  background-color: #0b808f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/*le <Naila/> */
+.navbar-brand  {
+  margin-left: 50px;
+  font-size: 30px;
+}
+/*les elements */
+.nav-links {
+  display: flex;
+  gap: 30px; /* espace entre les liens */
+}
 
+.nav-link-custom {
+  margin-right: 30px; /* espace à droite de chaque lien */
+  color: white ;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nav-link-custom:hover {
+  color: #00bcd4 ;
+}
+
+/*Banner*/
 /*About*/
 /*Experience*/
 /*Skills*/
