@@ -1,5 +1,10 @@
 /* Style du body */
-/* Style des titres h1, h2, h3, h4, h5, h6 */
+/* Style des titres  */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
 /* Style des paragraphes */
 /* Style des sections about , experience */
 section {
@@ -16,8 +21,6 @@ section {
 /*Skills*/
 /*Projects*/
 /*Education*/
-
-
 /*Licenses & Certifications*/
 /*Blogs*/
 /*Contact me*/
