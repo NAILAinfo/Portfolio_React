@@ -15,7 +15,7 @@ section {
 
 /*NavBar***************************************/
 .navbar{
-  background-color: #0b808f;
+  background-color: #132d46;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,19 +30,37 @@ section {
 .nav-links {
   display: flex;
   gap: 30px; /* espace entre les liens */
+  padding: 0;
 }
 
 .nav-link-custom {
   margin-right: 30px; /* espace à droite de chaque lien */
-  color: white ;
+  color: #8fb3e2 ;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+
+  position: relative;
+  transition: color 0.3s ease;
+}
+/* Le trait (soulignement) qu’on va animer */
+.nav-link-custom::after {
+  content: "";                     /* Crée un pseudo-élément vide */
+  position : absolute;           /* Placé par rapport au lien */
+  left: 0;                         /* Départ à gauche */
+  bottom: 0px;                    /* Juste en dessous du texte */
+  width: 0%;                       /* Invisible au départ */
+  height: 2px;                     /* Épaisseur du trait */
+  background-color: #01c38d;       /* Couleur du soulignement */
+  transition: width 0.3s ease;     /* Animation fluide */
 }
 
 .nav-link-custom:hover {
-  color: #00bcd4 ;
+  color: #01c38d ;
 }
-
+.nav-link-custom:hover::after {
+  width: 100%;                     /* Le trait s’étend sous tout le texte */
+}
+ 
 /*Banner*/
 /*About*/
 /*Experience*/
