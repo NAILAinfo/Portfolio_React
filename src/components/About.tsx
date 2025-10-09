@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" >
+    <section id="About" >
         <div
           style={{
             maxWidth: "800px",

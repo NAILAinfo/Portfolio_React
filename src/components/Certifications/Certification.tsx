@@ -2,7 +2,7 @@ import React from 'react';
 
 const Certification = () => {
     return (
-        <section>
+        <section id="Certifications">
             <h1 id="title">Certification</h1>
         </section>
     );
