@@ -23,7 +23,6 @@ const Banner = () => {
                                     <BsGithub size={30} />
 
                                 </a>
-
                                 <a
                                     href="https://linkedin.com/in/ton-profil"
                                     target="_blank"

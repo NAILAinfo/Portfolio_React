@@ -2,10 +2,10 @@ import React from 'react';
 
 const Blogs: React.FC = () => {
     return (
-        <section id="blogs" className="common-section">
-            <div className="common-container">
-                <h1 className="common-title">Blogs</h1>
-                <p className="common-text">Welcome to the blog section!</p>
+        <section id="blogs" className="blog-section">
+            <div className="div-container">
+                <h1>Blogs</h1>
+                <p >Welcome to the blog section!</p>
                 
                 <div className="common-wait-message">
                     🚧 Wait for it! 🚧

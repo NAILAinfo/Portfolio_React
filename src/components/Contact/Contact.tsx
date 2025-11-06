@@ -20,25 +20,27 @@ const Contact: React.FC = () => {
         // Here you can add the logic to process the form
         console.log('Form data:', formData);
         alert('Message sent!');
-        
-        // Reset the form
-        setFormData({
-            email: '',
-            subject: '',
-            content: ''
-        });
+         
+        emailjs.send(
+      'service_x7b9k3d',        // 👉 ton Service ID
+      'template_4p9e5kf',       // 👉 ton Template ID
+      formData,                 // 👉 les données du formulaire
+      'LA CLE'       // 👉 ta Public Key
+    )
+        .then(() => {
+      alert('Message envoyé avec succès ✅');
+      setFormData({ email: '', subject: '', message: '' });
+    })
+    .catch(() => {
+      alert('Erreur lors de l’envoi ❌');
+    });
     };
-
     return (
-        <section id="contact" className="common-section">
-            <div className="common-container">
-                <h1 className="common-title">Contact Me</h1>
-                
-                <form className="common-form" onSubmit={handleSubmit}>
-                    <div className="common-form-group">
-                        <label htmlFor="email" className="common-label">
-                            Email Address *
-                        </label>
+        <section>
+            <div>
+                <h1 >Contact me</h1>
+                <div id="contact">
+                <form id="form" onSubmit={handleSubmit}>                        
                         <input
                             type="email"
                             id="email"
@@ -46,15 +48,9 @@ const Contact: React.FC = () => {
                             className="common-input"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="your@email.com"
+                            placeholder="Email address"
                             required
-                        />
-                    </div>
-
-                    <div className="common-form-group">
-                        <label htmlFor="subject" className="common-label">
-                            Subject *
-                        </label>
+                        />                       
                         <input
                             type="text"
                             id="subject"
@@ -62,33 +58,25 @@ const Contact: React.FC = () => {
                             className="common-input"
                             value={formData.subject}
                             onChange={handleChange}
-                            placeholder="Subject of your message"
+                            placeholder="Subject "
                             required
-                        />
-                    </div>
-
-                    <div className="common-form-group">
-                        <label htmlFor="content" className="common-label">
-                            Message *
-                        </label>
+                        />                        
                         <textarea
                             id="content"
                             name="content"
                             className="common-textarea"
                             value={formData.content}
                             onChange={handleChange}
-                            placeholder="Your message here..."
+                            placeholder="Your message "
                             required
                         />
-                    </div>
-
-                    <button type="submit" className="common-button">
-                        Send Message
+                    <button type="submit" id="send">
+                        Send the message
                     </button>
                 </form>
+                </div>
             </div>
         </section>
     );
 };
-
 export default Contact;
