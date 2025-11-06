@@ -1,8 +1,20 @@
+:root {
+  --couleur_titre: #333;
+  --couleur_background: #f9f9f9;
+  --couleur_navbar: #132d46;
+  --couleur_logo_li: #01c38d;
+  --couleur_originale_li: #8fb3e2;
+  --couleur_border: #ddd;
+
+  --couleur_bouton: #007bff;
+  --couleur_bouton_survol: #0056b3;
+}
+
 /* Style du body */
 /* Style des titres  */
 h1 {
   font-size: 36px;
-  color: #333;
+  color: var(--couleur_titre);
   margin-bottom: 20px;
 }
 /* Style des paragraphes */
@@ -10,12 +22,12 @@ h1 {
 section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: var(--couleur_background);
 }
 
 /*NavBar***************************************/
 .navbar{
-  background-color: #132d46;
+  background-color: var(--couleur_navbar);
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +37,7 @@ section {
 .navbar-brand  {
   margin-left: 50px;
   font-size: 30px;
-  color: #01c38d ;
+  color: var(--couleur_logo_li) ;
 }
 /*les elements */
 .nav-links {
@@ -36,7 +48,7 @@ section {
 
 .nav-link-custom {
   margin-right: 30px; /* espace à droite de chaque lien */
-  color: #8fb3e2 ;
+  color: var(--couleur_originale_li) ;
   font-weight: 400;
   font-size: 18px;
 
@@ -51,12 +63,12 @@ section {
   bottom: 0px;                    /* Juste en dessous du texte */
   width: 0%;                       /* Invisible au départ */
   height: 2px;                     /* Épaisseur du trait */
-  background-color: #01c38d;       /* Couleur du soulignement */
+  background-color: var(--couleur_logo_li);       /* Couleur du soulignement */
   transition: width 0.3s ease;     /* Animation fluide */
 }
 
 .nav-link-custom:hover {
-  color: #01c38d ;
+  color: var(--couleur_logo_li) ;
 }
 .nav-link-custom:hover::after {
   width: 100%;                     /* Le trait s’étend sous tout le texte */
@@ -68,6 +80,14 @@ section {
 /*Projects*/
 /*Education*/
 /*Licenses & Certifications*/
+#certification-card{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 /*Blogs*/
 blog-section{
 width: 100%;
@@ -79,7 +99,7 @@ width: 100%;
   justify-content: center;
 }
 div-container{
-  background: #ffffff;
+  background: var(--couleur_background);
   width: 100%;
   max-width: 600px;
   padding: 40px;
@@ -101,14 +121,14 @@ form#form {
 input{
   width: 600px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid  var(--couleur_border);
   border-radius: 5px;
   font-size: 16px;
 }
 textarea{
   width: 600px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid  var(--couleur_border);
   border-radius: 5px;
   font-size: 16px;
   height: 200px;

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Award, ExternalLink } from "lucide-react";
+
 
 const Certification = () => {
     const certifications = [
@@ -17,13 +19,15 @@ const Certification = () => {
             <p>Professional certifications that validate my expertise and commitment to continuous learning</p>
             
             <div id="certification-list">
-                
                 {certifications.map((cert, index) => (
-                    <div key={index} className="certification-card">
+
+                    <div key={index} id="certification-card">
+                        <Award size={20} />
                         <h2>{cert.title}</h2>
                         <p>{cert.issuer}</p>
                         <p>Issued: {cert.date}</p>
-                        <p>{cert.skills.join(", ")}</p>        
+                        <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer">Verify Credential <ExternalLink size={14} /></a>
+                        <p>{cert.skills.join(", ")}</p>   
 
                 </div> ),
            
