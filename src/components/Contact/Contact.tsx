@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser'; 
 
 const Contact: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -21,15 +22,15 @@ const Contact: React.FC = () => {
         console.log('Form data:', formData);
         alert('Message sent!');
          
-        emailjs.send(
-      'service_x7b9k3d',        // 👉 ton Service ID
-      'template_4p9e5kf',       // 👉 ton Template ID
+    emailjs.send(
+      'service_izv8pwf',        // 👉 ton Service ID
+      'template_juw777g',       // 👉 ton Template ID
       formData,                 // 👉 les données du formulaire
-      'LA CLE'       // 👉 ta Public Key
+      'tsC8WsEI5AwREWRAA'       // 👉 ta Public Key
     )
         .then(() => {
       alert('Message envoyé avec succès ✅');
-      setFormData({ email: '', subject: '', message: '' });
+      setFormData({ email: '', subject: '', content: '' });
     })
     .catch(() => {
       alert('Erreur lors de l’envoi ❌');
@@ -70,7 +71,7 @@ const Contact: React.FC = () => {
                             placeholder="Your message "
                             required
                         />
-                    <button type="submit" id="send">
+                    <button type="submit" id="send" >
                         Send the message
                     </button>
                 </form>
