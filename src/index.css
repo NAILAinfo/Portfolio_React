@@ -80,14 +80,80 @@ section {
 /*Projects*/
 /*Education*/
 /*Licenses & Certifications*/
+#Certifications{
+ text-align: center; /* Centre le texte horizontalement */
+  position: relative; /* Sert de repère pour les éléments positionnés à l’intérieur */
+}
+#certification-list {
+  display: flex; /* Active le mode flexbox pour aligner les cartes */
+  flex-wrap: wrap; /* Permet le retour à la ligne si trop de cartes */
+  justify-content: center; /* Centre les cartes horizontalement */
+  gap: 30px; /* Espace entre les cartes */
+  position: relative; /* Nécessaire pour positionner les enfants en absolu */
+}
+
 #certification-card{
+  width: 280px;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   margin: 15px 0;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+
 }
+.certification-card:hover {
+  transform: scale(1.05); /* Agrandit légèrement la carte */
+  z-index: 3; /* Passe devant toutes les autres */
+}
+#tete_certi{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#certification-card{
+  display: "inline-block", 
+
+}
+/* === En-tête de chaque carte (icône + texte) === */
+.tete-certi {
+  display: flex; /* Aligne les éléments sur une même ligne */
+  align-items: center; /* Centre verticalement les éléments */
+  gap: 10px; /* Espace entre l’icône et le texte */
+  margin-bottom: 10px; /* Espace sous l’en-tête */
+}
+
+/* === Ligne “Issued” === */
+.issued {
+  font-size: 0.9rem; /* Taille de texte un peu plus petite */
+  color: #666; /* Couleur de texte grisée */
+}
+
+/* === Lien “Verify Credential” === */
+.verify-link {
+  display: inline-flex; /* Aligne le texte et l’icône côte à côte */
+  align-items: center; /* Centre verticalement texte et icône */
+  gap: 5px; /* Espace entre le texte et l’icône */
+  color: #007bff; /* Couleur bleue typique pour les liens */
+  text-decoration: none; /* Retire le soulignement par défaut */
+}
+
+/* === Lien au survol === */
+.verify-link:hover {
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* === Liste des compétences === */
+.skills {
+  margin-top: 10px; /* Espace au-dessus du texte des compétences */
+  color: #333; /* Couleur de texte foncée */
+  font-weight: 500; /* Texte un peu plus épais */
+}
+
+/*******************/
+
 /*Blogs*/
 blog-section{
 width: 100%;

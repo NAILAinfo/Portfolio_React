@@ -5,13 +5,20 @@ import { Award, ExternalLink } from "lucide-react";
 const Certification = () => {
     const certifications = [
         {
-            title : "SQL (Intermediate)",
+            title : "SQL ( Basics )",
+            issuer: "HackerRank",
+            date: "2025",
+            skills: ["Data base", "SQL"],
+            verifyLink : "https://www.hackerrank.com/certificates/C374D48E077B"
+        },
+        {
+            title : "SQL (Intermediate )",
             issuer: "HackerRank",
             date: "2025",
             skills: ["Data base", "SQL"],
             verifyLink : "https://www.hackerrank.com/certificates/C374D48E098B"
-
-        }
+        },
+        
     ];
     return (
         <section id="Certifications">
@@ -22,12 +29,16 @@ const Certification = () => {
                 {certifications.map((cert, index) => (
 
                     <div key={index} id="certification-card">
-                        <Award size={20} />
-                        <h2>{cert.title}</h2>
-                        <p>{cert.issuer}</p>
-                        <p>Issued: {cert.date}</p>
-                        <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer">Verify Credential <ExternalLink size={14} /></a>
-                        <p>{cert.skills.join(", ")}</p>   
+                        <div id='tete_certi'>
+                            <Award size={20} />
+                            <div>
+                                <h2>{cert.title}</h2>
+                                <p>{cert.issuer}</p>
+                            </div>
+                        </div>
+                        <p className="issued">Issued: {cert.date}</p>
+                        <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer" className='verify-link'>Verify Credential <ExternalLink size={14} /></a>
+                        <p className="skills">{cert.skills.join(", ")}</p>   
 
                 </div> ),
            
