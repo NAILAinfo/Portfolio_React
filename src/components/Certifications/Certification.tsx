@@ -1,7 +1,5 @@
 import React from 'react';
 import { Award, ExternalLink } from "lucide-react";
-
-
 const Certification = () => {
     const certifications = [
         {
@@ -29,8 +27,11 @@ const Certification = () => {
                 {certifications.map((cert, index) => (
 
                     <div key={index} id="certification-card">
+                        
+                        <div  className="icon-container">
+                            <Award className="icon-award" />
+                        </div>
                         <div id='tete_certi'>
-                            <Award size={20} />
                             <div>
                                 <h2>{cert.title}</h2>
                                 <p>{cert.issuer}</p>
@@ -38,7 +39,12 @@ const Certification = () => {
                         </div>
                         <p className="issued">Issued: {cert.date}</p>
                         <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer" className='verify-link'>Verify Credential <ExternalLink size={14} /></a>
-                        <p className="skills">{cert.skills.join(", ")}</p>   
+                        <div className="skills">
+                                {cert.skills.map((skill, i) => (
+                                    <span key={i} className="skill-badge">{skill}</span>
+                                ))}
+                        </div>
+
 
                 </div> ),
            
